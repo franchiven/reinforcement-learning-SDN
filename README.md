@@ -36,8 +36,8 @@ To run the entire SDN architecture:
     - NetRunnerNS.py
     - PanEuroNet.json
     - g_switchesOut.pickle
-5. Place your own IP address in NetRunnerNs line 82 and your own network topology (if desired) in NetRunnerNS line 83 and in ShortestPathBridgeNet_NP line 139.
+5. Place your own IP address in NetRunnerNs line 71 and your own network topology (if desired) in NetRunnerNS line 70 and in ShortestPathBridgeNet_NP line 123.
 6. Follow the instructions in chapter 5 of the thesis to simulate the network.
 7. These are the two main commands to start the network:
-    - sudo python NetRunnerNS.py -f PanEuroNet.json -ip 192.168.56.101 
+    - sudo python NetRunnerNS.py -f PanEuroNet.json -ip (place ip here) 
     - python l2DestForwardStaticRyuNS.py --netfile=PanEuroNet.json

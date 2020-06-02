@@ -68,7 +68,7 @@ class GraphTopoFixedAddrPorts(Topo):
 
 if __name__ == '__main__':
     fname = "PanEuroNet.json"  # You can put your default file here
-    remoteIP = "192.168.56.101"      # Put your default remote IP here
+    remoteIP = " "      # Put your default remote IP here
     # Using the nice Python argparse library to take in optional arguments
     # for file name and remote controller IP address
     parser = argparse.ArgumentParser()
