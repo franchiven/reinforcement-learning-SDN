@@ -1,0 +1,525 @@
+{
+  "directed": false,
+  "multigraph": false,
+  "graph": {
+    "name": "",
+    "desc": ""
+  },
+  "nodes": [
+    {
+      "id": "S1",
+      "type": "switch",
+      "x": 1021,
+      "y": 164
+    },
+    {
+      "id": "S2",
+      "type": "switch",
+      "x": 438,
+      "y": 241
+    },
+    {
+      "id": "S3",
+      "type": "switch",
+      "x": 683,
+      "y": 317
+    },
+    {
+      "id": "S4",
+      "type": "switch",
+      "x": 946,
+      "y": 330
+    },
+    {
+      "id": "S5",
+      "type": "switch",
+      "x": 551,
+      "y": 446
+    },
+    {
+      "id": "S6",
+      "type": "switch",
+      "x": 739,
+      "y": 497
+    },
+    {
+      "id": "S7",
+      "type": "switch",
+      "x": 1054,
+      "y": 527
+    },
+    {
+      "id": "S8",
+      "type": "switch",
+      "x": 484,
+      "y": 583
+    },
+    {
+      "id": "S9",
+      "type": "switch",
+      "x": 831,
+      "y": 647
+    },
+    {
+      "id": "S10",
+      "type": "switch",
+      "x": 1189,
+      "y": 605
+    },
+    {
+      "id": "S11",
+      "type": "switch",
+      "x": 855,
+      "y": 798
+    },
+    {
+      "id": "H1",
+      "type": "host",
+      "x": 1020,
+      "y": 126,
+      "mac": "00:00:00:00:00:10"
+    },
+    {
+      "id": "H2",
+      "type": "host",
+      "x": 437,
+      "y": 200,
+      "mac": "00:00:00:00:00:11"
+    },
+    {
+      "id": "H3",
+      "type": "host",
+      "x": 684,
+      "y": 278,
+      "mac": "00:00:00:00:00:12"
+    },
+    {
+      "id": "H4",
+      "type": "host",
+      "x": 946,
+      "y": 287,
+      "mac": "00:00:00:00:00:13"
+    },
+    {
+      "id": "H5",
+      "type": "host",
+      "x": 550,
+      "y": 400,
+      "mac": "00:00:00:00:00:14"
+    },
+    {
+      "id": "H6",
+      "type": "host",
+      "x": 738,
+      "y": 455,
+      "mac": "00:00:00:00:00:15"
+    },
+    {
+      "id": "H7",
+      "type": "host",
+      "x": 1058,
+      "y": 479,
+      "mac": "00:00:00:00:00:16"
+    },
+    {
+      "id": "H8",
+      "type": "host",
+      "x": 490,
+      "y": 539,
+      "mac": "00:00:00:00:00:17"
+    },
+    {
+      "id": "H9",
+      "type": "host",
+      "x": 833,
+      "y": 605,
+      "mac": "00:00:00:00:00:18"
+    },
+    {
+      "id": "H10",
+      "type": "host",
+      "x": 1189,
+      "y": 563,
+      "mac": "00:00:00:00:00:19"
+    },
+    {
+      "id": "H11",
+      "type": "host",
+      "x": 859,
+      "y": 755,
+      "mac": "00:00:00:00:00:20"
+    }
+  ],
+  "links": [
+    {
+      "source": "H1",
+      "target": "S1",
+      "weight": 1,
+      "capacity": 100,
+      "ports": {
+        "H1": 1,
+        "S1": 1
+      }
+    },
+    {
+      "source": "S2",
+      "target": "S1",
+      "weight": 1310,
+      "capacity": 1000,
+      "ports": {
+        "S2": 2,
+        "S1": 2
+      }
+    },
+    {
+      "source": "S1",
+      "target": "S3",
+      "weight": 760,
+      "capacity": 1000,
+      "ports": {
+        "S1": 3,
+        "S3": 2
+      }
+    },
+    {
+      "source": "S1",
+      "target": "S4",
+      "weight": 390,
+      "capacity": 1000,
+      "ports": {
+        "S1": 4,
+        "S4": 2
+      }
+    },
+    {
+      "source": "S1",
+      "target": "S7",
+      "weight": 740,
+      "capacity": 1000,
+      "ports": {
+        "S1": 5,
+        "S7": 2
+      }
+    },
+    {
+      "source": "H2",
+      "target": "S2",
+      "weight": 1,
+      "capacity": 100,
+      "ports": {
+        "H2": 1,
+        "S2": 1
+      }
+    },
+    {
+      "source": "H3",
+      "target": "S3",
+      "weight": 1,
+      "capacity": 100,
+      "ports": {
+        "H3": 1,
+        "S3": 1
+      }
+    },
+    {
+      "source": "H4",
+      "target": "S4",
+      "weight": 1,
+      "capacity": 100,
+      "ports": {
+        "H4": 1,
+        "S4": 1
+      }
+    },
+    {
+      "source": "S5",
+      "target": "H5",
+      "weight": 1,
+      "capacity": 100,
+      "ports": {
+        "S5": 1,
+        "H5": 1
+      }
+    },
+    {
+      "source": "H6",
+      "target": "S6",
+      "weight": 1,
+      "capacity": 100,
+      "ports": {
+        "H6": 1,
+        "S6": 1
+      }
+    },
+    {
+      "source": "H7",
+      "target": "S7",
+      "weight": 1,
+      "capacity": 100,
+      "ports": {
+        "H7": 1,
+        "S7": 1
+      }
+    },
+    {
+      "source": "H8",
+      "target": "S8",
+      "weight": 1,
+      "capacity": 100,
+      "ports": {
+        "H8": 1,
+        "S8": 1
+      }
+    },
+    {
+      "source": "H9",
+      "target": "S9",
+      "weight": 1,
+      "capacity": 100,
+      "ports": {
+        "H9": 1,
+        "S9": 1
+      }
+    },
+    {
+      "source": "H10",
+      "target": "S10",
+      "weight": 1,
+      "capacity": 100,
+      "ports": {
+        "H10": 1,
+        "S10": 1
+      }
+    },
+    {
+      "source": "H11",
+      "target": "S11",
+      "weight": 1,
+      "capacity": 100,
+      "ports": {
+        "H11": 1,
+        "S11": 1
+      }
+    },
+    {
+      "source": "S2",
+      "target": "S3",
+      "weight": 550,
+      "capacity": 1000,
+      "ports": {
+        "S2": 3,
+        "S3": 3
+      }
+    },
+    {
+      "source": "S2",
+      "target": "S5",
+      "weight": 390,
+      "capacity": 1000,
+      "ports": {
+        "S2": 4,
+        "S5": 2
+      }
+    },
+    {
+      "source": "S2",
+      "target": "S8",
+      "weight": 450,
+      "capacity": 1000,
+      "ports": {
+        "S2": 5,
+        "S8": 2
+      }
+    },
+    {
+      "source": "S3",
+      "target": "S4",
+      "weight": 660,
+      "capacity": 1000,
+      "ports": {
+        "S3": 4,
+        "S4": 3
+      }
+    },
+    {
+      "source": "S3",
+      "target": "S5",
+      "weight": 210,
+      "capacity": 1000,
+      "ports": {
+        "S3": 5,
+        "S5": 3
+      }
+    },
+    {
+      "source": "S3",
+      "target": "S6",
+      "weight": 390,
+      "capacity": 1000,
+      "ports": {
+        "S3": 6,
+        "S6": 2
+      }
+    },
+    {
+      "source": "S4",
+      "target": "S7",
+      "weight": 340,
+      "capacity": 1000,
+      "ports": {
+        "S4": 4,
+        "S7": 3
+      }
+    },
+    {
+      "source": "S4",
+      "target": "S8",
+      "weight": 1090,
+      "capacity": 1000,
+      "ports": {
+        "S4": 5,
+        "S8": 3
+      }
+    },
+    {
+      "source": "S4",
+      "target": "S10",
+      "weight": 660,
+      "capacity": 1000,
+      "ports": {
+        "S4": 6,
+        "S10": 2
+      }
+    },
+    {
+      "source": "S5",
+      "target": "S6",
+      "weight": 220,
+      "capacity": 1000,
+      "ports": {
+        "S5": 4,
+        "S6": 3
+      }
+    },
+    {
+      "source": "S5",
+      "target": "S8",
+      "weight": 300,
+      "capacity": 1000,
+      "ports": {
+        "S5": 5,
+        "S8": 4
+      }
+    },
+    {
+      "source": "S5",
+      "target": "S11",
+      "weight": 930,
+      "capacity": 1000,
+      "ports": {
+        "S5": 6,
+        "S11": 2
+      }
+    },
+    {
+      "source": "S6",
+      "target": "S7",
+      "weight": 730,
+      "capacity": 1000,
+      "ports": {
+        "S6": 4,
+        "S7": 4
+      }
+    },
+    {
+      "source": "S6",
+      "target": "S8",
+      "weight": 400,
+      "capacity": 1000,
+      "ports": {
+        "S6": 5,
+        "S8": 5
+      }
+    },
+    {
+      "source": "S6",
+      "target": "S9",
+      "weight": 350,
+      "capacity": 1000,
+      "ports": {
+        "S6": 6,
+        "S9": 2
+      }
+    },
+    {
+      "source": "S7",
+      "target": "S9",
+      "weight": 565,
+      "capacity": 1000,
+      "ports": {
+        "S7": 5,
+        "S9": 3
+      }
+    },
+    {
+      "source": "S7",
+      "target": "S10",
+      "weight": 320,
+      "capacity": 1000,
+      "ports": {
+        "S7": 6,
+        "S10": 3
+      }
+    },
+    {
+      "source": "S8",
+      "target": "S9",
+      "weight": 600,
+      "capacity": 1000,
+      "ports": {
+        "S8": 6,
+        "S9": 4
+      }
+    },
+    {
+      "source": "S8",
+      "target": "S11",
+      "weight": 820,
+      "capacity": 1000,
+      "ports": {
+        "S8": 7,
+        "S11": 3
+      }
+    },
+    {
+      "source": "S9",
+      "target": "S10",
+      "weight": 730,
+      "capacity": 1000,
+      "ports": {
+        "S9": 5,
+        "S10": 4
+      }
+    },
+    {
+      "source": "S9",
+      "target": "S11",
+      "weight": 320,
+      "capacity": 1000,
+      "ports": {
+        "S9": 6,
+        "S11": 4
+      }
+    },
+    {
+      "source": "S10",
+      "target": "S11",
+      "weight": 820,
+      "capacity": 1000,
+      "ports": {
+        "S10": 5,
+        "S11": 5
+      }
+    }
+  ]
+}
