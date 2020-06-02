@@ -30,14 +30,14 @@ To run the entire SDN architecture:
 3. Install all the necessary packages.
 4. Inside the VM open the folder: ryu/ryu/app. (This can be done with the command cd ryu/ryu/app once the machine has just started).
 5. Copy the following files in this repo into the new folder:
-- l2DestForwardStaticRyuNS.py
-- ShortestPathBridgeNet_NP.py
-- TensorFlow Q-learning.ipynb
-- NetRunnerNS.py
-- PanEuroNet.json
-- g_switchesOut.pickle
+    - l2DestForwardStaticRyuNS.py
+    - ShortestPathBridgeNet_NP.py
+    - TensorFlow Q-learning.ipynb
+    - NetRunnerNS.py
+    - PanEuroNet.json
+    - g_switchesOut.pickle
 5. Place your own IP address in NetRunnerNs line 82 and your own network topology (if desired) in NetRunnerNS line 83 and in ShortestPathBridgeNet_NP line 139.
 6. Follow the instructions in chapter 5 of the thesis to simulate the network.
 7. These are the two main commands to start the network:
-- sudo python NetRunnerNS.py -f PanEuroNet.json -ip 192.168.56.101 
-- python l2DestForwardStaticRyuNS.py --netfile=PanEuroNet.json
+    - sudo python NetRunnerNS.py -f PanEuroNet.json -ip 192.168.56.101 
+    - python l2DestForwardStaticRyuNS.py --netfile=PanEuroNet.json
