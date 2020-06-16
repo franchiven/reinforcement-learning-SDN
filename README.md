@@ -1,7 +1,8 @@
 # reinforcement-learning-SDN
 **University of Bristol Masters Thesis, 2019**
 
-**Read the full thesis in /Thesis/FrancescoVenerandiThesis.pdf**
+**Read the full thesis here:**
+https://github.com/franchiven/reinforcement-learning-SDN/blob/master/Thesis/FrancescoVenerandiThesis.pdf
 
 This project investigated how Reinforcement Learning could be applied to different parts of a software defined network. The code included in this repository specifically looks at how Q-learning could be used for path finding in a SDN. 
 
